@@ -349,6 +349,9 @@ class Extension implements ExtensionInterface
                                 end()->
                                 arrayNode('chrome')->
                                     children()->
+                                        arrayNode('args')->
+                                            prototype('scalar')->end()->
+                                        end()->
                                         arrayNode('switches')->
                                             prototype('scalar')->end()->
                                         end()->
